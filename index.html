@@ -47,6 +47,8 @@
 
         hide_scanned();
 
+        initWilddog();
+
         $(document).ready(function () {
             $('#reader').html5_qrcode(function (data) {
                 console.log(data);
