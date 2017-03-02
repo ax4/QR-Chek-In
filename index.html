@@ -26,6 +26,9 @@
     crossorigin="anonymous"></script>
 <!--ref: https://github.com/dwa012/html5-qrcode -->
 <script src="https://dwa012.github.io/html5-qrcode/javascripts/html5-qrcode.min.js"></script>
+<script src="https://cdn.wilddog.com/sdk/js/2.4.3/wilddog.js"></script>
+<script src="./js/sync.js"></script>
+
 
 <script id = "sound">
         // http://stackoverflow.com/questions/879152/how-do-i-make-javascript-beep
@@ -50,6 +53,7 @@
                 e_scan.hidden = false;
                 setTimeout(hide_scanned,1000); 
                 beep();
+                checkin(data,"");
             },
                 function (error) {
                     //do nothing //console.log(error);
